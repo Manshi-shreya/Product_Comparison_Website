@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <title>compare2</title>
+    <style>
+        .one{
+           
+            height:100%;
+            width:100% ;
+            display: flex;
+            justify-content: center;
+
+        }
+        .two{
+            
+            text-align: center;
+
+        }
+        .hmc{
+            text-align: center;
+            background-color: rgb(228 150 61);
+        }
+        table{
+            border-spacing: 0.1erm;
+            width: 75rem;
+            background-color: white;
+
+        }
+        td,th{
+            border: 1px solid #999;
+            padding: 0rem;
+            font-size: 1.3rem;
+        }
+        th{
+               font-size: 1.5rem;
+               font-family: 'Source Serif Pro', serif;
+        }
+        .o{
+            height: 30rem;
+        }
+        .a{
+            height: 4rem;
+        }
+        select{
+            height: 2rem;
+            width: 14rem;
+            font-size: 1.1rem;
+        }
+        button{
+            height: 2.5rem;
+            width: 10rem;
+            font-size: 1.1rem;
+        padding: 6px 20px;
+        
+        color: black;
+        margin: 17px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor:pointer;
+        }
+        h1{
+            font-family: 'Source Serif Pro', serif;
+            font-size: 46px;
+            font-weight: 400;
+            color: white;
+        }
+        .oo{
+            background-color:rgb(242 229 215);
+        }
+        button:hover{
+            background-color: rgb(228 150 61);
+            color: white;
+        }
+       .oo{
+        background-color: rgb(242 229 215);
+       }
+
+    </style>
+</head>
+<body>
+    <div class="oo">
+        <div class="hmc">
+        <h1>Compare Here</h1>
+    </div>
+        <div class="one">
+            <table class="two">
+                <tr>
+                    <th>Website</th>
+                    <th>Amazon</th>
+                    <th>Flipkart</th>
+                    <th>Myntra</th>
+                </tr>
+                
+                <tr>
+                    <th>select your product</th>
+                    <td >
+
+                        <select name="" id="select1" onchange="item1(this.value)">select Anyone
+                            <option value="">Select Anyone</option>
+                           <!-- <option value="">Suit</option>
+                            <option value="">Shirt</option>
+                            <option value="">Saree</option>
+                            <option value="">baby clothes</option>
+                            <option value="">Jeans</option>-->
+                        </select>
+                    </td>
+                    <td cl>
+                        <select name="" id="select2" onchange="item2(this.value)">
+                            <option value="">Select Anyone</option>
+                            <!--<option value="">Suit</option>
+                            <option value="">Shirt</option>
+                            <option value="">Saree</option>
+                            <option value="">baby clothes</option>
+                            <option value="">Jeans</option>-->
+
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="select3" onchange="item3(this.value)">
+                            <option value="">Select Anyone</option>
+                          <!--  <option value="">Suit</option>
+                            <option value="">Shirt</option>
+                            <option value="">Saree</option>
+                            <option value="">baby clothes</option>
+                            <option value="">Jeans</option>-->
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td class="o"><img src="suit.jpg" alt="" id="img1" height="400px" width="250px"></td>
+                    <td class="o"><img src="suit.jpg" alt="" id="img2"  height="400px" width="250px"></td>
+                    <td class="o"><img src="suit.jpg" alt="" id="img3" height="400px" width="250px"></td>
+                </tr>
+                <tr class="a">
+                    <th>Product Price</th>
+                    <td id="price1"> &#x20b9 901</td>
+                    <td id="price2"> &#x20b9 863</td>
+                    <td id="price3"> &#x20b9 804</td>
+                </tr>
+                <tr class="a">
+                    <th>Product Brand</th>
+                    <td id="brand1">Fashion SAY</td>
+                    <td id="brand2">Fashion SAY</td>
+                    <td id="brand3">Fashion SAY</td>
+                </tr>
+                <tr class="a">
+                    <th>Product Description</th>
+                    <td id="desc1">Fashion SAY Women's Georgette Bandhani Printed Anarkali Kurta</td>
+                    <td id="desc2">Women Kurta, Pant And Dupatta Set Georgette</td>
+                    <td class="desc3">Anni Designer Women's Georgette Pink Bandhani Printed Anarkali Kurta with Trouser & Dupatta</td>
+                    
+                </tr>
+                <tr class="a">
+                    <th>Product link</th>
+                    <td><a href="https://amzn.eu/d/hceZIZm" target="_blank"><button>click to buy</button></a></td>
+                    <td><a href="https://dl.flipkart.com/dl/fashion-say-women-kurta-pant-dupatta-set/p/itm6a36430a8c1be?pid=ETHGMVC9QFG6YE8H&cmpid=product.share.pp&_refId=PP.4a5b0926-5a1e-4c1f-9dc8-2c079b798670.ETHGMVC9QFG6YE8H&_appId=WA"><button>click to buy</button></a></td>
+                    <td><a href="https://www.meesho.com/s/p/2zad2r?utm_source=s_w"  target="blank"><button>click to buy</button></a></td>
+                </tr>
+             
+            </table>
+        </div>
+    </div>
+<<<<<<< HEAD
+    <script src="comparision2.js"></script>
+=======
+    <script src="comparison2.js"></script>
+>>>>>>> e0d0082136b5f8f30b110f1fba000f8e69951cc7
+</body>
+</html>

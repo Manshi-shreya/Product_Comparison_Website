@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <title>compare1</title>
+    <style>
+        .one{
+            
+            height:100%;
+            width:100% ;
+            display: flex;
+            justify-content: center;
+
+        }
+        .two{
+            
+            text-align: center;
+
+        }
+        .hmc{
+            text-align: center;
+            background-color: rgb(228 150 61);
+        }
+        table{
+            border-spacing: 0.1erm;
+            width: 75rem;
+            background-color: white;
+
+        }
+        td,th{
+            border: 1px solid #999;
+            padding: 0rem;
+            font-size: 1.2rem;
+        }
+        th{
+               font-size: 1.4rem;
+               font-family: 'Source Serif Pro', serif;
+        }
+        .o{
+            height: 30rem;
+        }
+        .a{
+            height: 4rem;
+        }
+        select{
+            height: 2rem;
+            width: 14rem;
+            font-size: 1.1rem;
+        }
+        button{
+            height: 2.5rem;
+            width: 10rem;
+            font-size: 1.1rem;
+        padding: 6px 20px;
+        
+        color: black;
+        margin: 17px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor:pointer;
+        }
+        h1{
+            font-family: 'Source Serif Pro', serif;
+            font-size: 46px;
+            font-weight: 400;
+            color: white;
+        }
+        .oo{
+            background-color:rgb(242 229 215);
+        }
+        button:hover{
+            background-color: rgb(228 150 61);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="oo">
+        <div class="hmc">
+        <h1>Compare Here</h1>
+    </div>
+        <div class="one">
+            <table class="two">
+                <tr>
+                    <th>Website</th>
+                    <th>Amazon</th>
+                    <th>Flipkart</th>
+                    <th>Myntra</th>
+                </tr>
+                
+                <tr>
+                    <th>select your product</th>
+                    <td >
+
+                        <select name="" id="select1" onchange="item1(this.value)">
+                            <option value="0">Select Anyone</option>
+                           <!-- <option value="">Facewash</option>
+                            <option value="">Moisturizer</option>
+                            <option value="">lipbam</option>
+                            <option value="">face mask</option>
+                            <option value="">deogrant</option>-->
+                        </select>
+                    </td>
+                    <td cl>
+                        <select name="" id="select2" onchange="item2(this.value)">
+                            <option value="0">Select Anyone</option>
+                           <!-- <option value="">Facewash</option>
+                            <option value="">Moisturizer</option>
+                            <option value="">lipbam</option>
+                            <option value="">face mask</option>
+                            <option value="">Deodrant</option>-->
+
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="select3" onchange="item3(this.value)">
+                            <option value="0">Select Anyone</option>
+                           <!-- <option value="">Facewash</option>
+                            <option value="">Moisturizer</option>
+                            <option value="">lipbalm</option>
+                            <option value="">face mask</option>
+                            <option value="">Deodrant</option>-->
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td><img src="showpeice.jpg" alt="" height="400px" width="250px" id="img1"></td>
+                    <td><img src="showpeice.jpg" alt="" height="400px" width="250px" id="img2"></td>
+                    <td><img src="showpeice.jpg" alt="" height="400px" width="250px" id="img3"></td>
+                </tr>
+                <tr class="b">
+                    <th>Product Price</th>
+                    <td id="price1"> &#x20b9 179</td>
+                    <td id="price2"> &#x20b9 169</td>
+                    <td id="price3"> &#x20b9 138</td>
+                </tr>
+                <tr class="b">
+                    <th>Product Brand</th>
+                    <td id="brand1">Well Art Gallery</td>
+                    <td id="brand2">Dinine Craft</td>
+                    <td id="brand3">Mahi creations</td>
+                </tr>
+                <tr class="b">
+                    <th>Product Description</th>
+                    <td id="desc1">Collectible India Buddha Monk Set of 4 Statue Figurines Showpiece</td>
+                    <td id="desc2">Dinine Craft Set of 4 Showpiece for Home Decor, Handicraft Showpiece </td>
+                    <td id="desc3">Set of 4 Baby Buddha decorative figures for Home Decoration</td>
+                    
+                </tr>
+                <tr class="b">
+                    <th>Product link</th>
+                    <td><a href=https://amzn.eu/d/5xehnB0 target="_blank" id="link1"><button>click to buy</button></a></td>
+                    <td><a href=https://dl.flipkart.com/dl/dinine-craft-set-4-showpiece-home-decor-handicraft-table-office-small-statue-baby-monk-buddha-modern-interior-multi-color-decorative-cm/p/itmd22b42bd5e2f3?pid=SHIFYG8APACZRPM8&cmpid=product.share.pp&_refId=PP.79354b88-e4c7-4cc4-b9df-ad3127fc1953.SHIFYG8APACZRPM8&_appId=WA target="_blank"  id="link2"><button>click here</button></a></td>
+                    <td><a href=https://www.meesho.com/s/p/2hz4hf?utm_source=s_w  target="blank" id="link3"><button>click to buy</button></a></td>
+                </tr>
+             
+            </table>
+        </div>
+    </div>
+    <script src="comparison5.js"></script>
+</body>
+</html>
